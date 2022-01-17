@@ -14,6 +14,7 @@ from sklearn.metrics import r2_score #error calculation
 data=pd.read_csv('Salesdata.csv')
 data.columns
 data.info()
+data.head()
 
 # Check outliers in the data.
 sns.boxplot(data['Newspaper'])
@@ -43,20 +44,24 @@ print(lin_reg.intercept_)
 test_pred = lin_reg.predict(X_test)
 
 
-# Visualising the Training set results
-plt.scatter(X_train, Y_train, color = '#88c999')
-plt.plot(X_train, lin_reg.predict(X_train), color = 'blue')
+# Visualising the Train set results
+plt.scatter(X_train, Y_train, color = '#88c939')
+plt.plot(X_train, lin_reg.predict(X_train), color = 'red')
+plt.title('Sales Price Prediction (training set)')
+plt.xlabel('TV')
+plt.ylabel('Sales')
+plt.show()
 
 
 # Visualising the Test set results
-plt.scatter(X_test, Y_test, color = '#88c999')
-plt.plot(X_train, lin_reg.predict(X_train), color = 'blue')
+plt.scatter(X_test, Y_test, color = '#88c939')
+plt.plot(X_train, lin_reg.predict(X_train), color = 'red')
 plt.title('Sales Price Prediction (Test set)')
 plt.xlabel('TV')
 plt.ylabel('Sales')
 plt.show()
 
-#Checking errors
+#Evaluating the Model
 score=r2_score(Y_test,test_pred)
 print("R2 Score is =",score) #printing the accuracy
 print("MSE is =",mean_squared_error(Y_test,test_pred))
