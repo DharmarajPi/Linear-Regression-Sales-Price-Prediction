@@ -64,8 +64,3 @@ print("RMSE of is =",np.sqrt(mean_squared_error(Y_test,test_pred)))
 
 #Predict the Sales for TV value 300,100,150
 lin_reg.predict([[300],[100],[150]])
-
-
-
-
-
