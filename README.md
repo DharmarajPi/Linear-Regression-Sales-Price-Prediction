@@ -26,8 +26,8 @@ y=c+m1×TV
 
 The  m  values are called the model coefficients or model parameters.
 
-Have doubts? Need help? Contact me!
+**Have doubts? Need help? Contact me!**
 
-LinkedIn: https://www.linkedin.com/in/dharmaraj-d-1b707898
+**LinkedIn:** https://www.linkedin.com/in/dharmaraj-d-1b707898
 
-Blogs: https://medium.com/@draj0718
+**Blogs:** https://medium.com/@draj0718
